@@ -1,5 +1,9 @@
 # Setup
 
+## Operating System
+
+This repo was developed and tested on Windows Subsystem for Linux (WSL) on Windows 11 Home build 22621.3737 64-bit.
+
 ## Python Environment
 
 Ensure Python 3.10 is installed on the system, e.g. with
