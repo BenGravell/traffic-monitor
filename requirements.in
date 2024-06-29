@@ -1,0 +1,38 @@
+# Numerical computing
+numpy>=1.23.5
+scipy>=1.7.3
+pandas>=2.2.2
+scikit-learn>=1.5.0
+pyarrow>=16.1.0
+thop>=0.1.1
+# Computer vision
+opencv-python>=4.1.1
+pillow>=10.3.0
+torch>=2.3.0
+torchvision>=0.18.0
+onnx>=1.16.1
+onnxruntime>=1.18.0
+ultralytics>=8.0.232
+# Pipelining
+joblib>=1.4.2
+tqdm>=4.66.4
+codetiming>=1.4.0
+# Plotting
+matplotlib>=3.5.3
+plotly>=5.22.0
+seaborn>=0.11.0
+# Jupyter notebook support
+ipykernel>=6.16.2
+nbformat>=5.10.4
+# Web tools
+requests>=2.32.0
+# Development tools
+gitpython>=3.1.30
+PyYAML>=6.0.1
+psutil>=5.9.8
+pre-commit
+black>=24.3.0
+ruff
+mypy
+pip-chill>=1.0.1
+pip-tools
