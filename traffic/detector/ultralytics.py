@@ -27,15 +27,17 @@ class Primary(nn.Module):
         """Performs YOLO inference on an input image tensor.
 
         Arguments:
+        ---------
         image: numpy array with shape = (channel, height, width)
 
         Returns:
+        -------
         Prediction outputs: length-1 list of numpy array with shape (1, 25200, 85) where
         1 = batch size
         25200 = number of boxes
         85 = 4 box coordinates in (x1, y1, x2, y2) format + 1 box confidence + 80 class confidences corresponding to COCO classes.
-        """
 
+        """
         return self.session.run(self.output_names, {self.input_names[0]: image})
 
 

@@ -23,8 +23,10 @@ def clip_boxes(boxes: LtrbBoxes, size: HeightWidth) -> None:
     In-place operation.
 
     Arguments:
+    ---------
     boxes: (N, 4) array of box coordinates in (left, top, right, bottom) format.
     size: (height, width) tuple of frame size to clip boxes to.
+
     """
     boxes[..., [0, 2]] = boxes[..., [0, 2]].clip(0, size[1])  # left, right
     boxes[..., [1, 3]] = boxes[..., [1, 3]].clip(0, size[0])  # top, bottom
@@ -38,12 +40,15 @@ def scale_boxes(
     """Scale boxes from one frame shape to another.
 
     Arguments:
+    ---------
     boxes: Bounding boxes in (left, top, right, bottom) format.
     from_shape: Frame shape (height, width) for the arg boxes.
     to_shape: Frame shape (height, width) for the returned boxes.
 
     Returns:
+    -------
     Boxes in (left, top, right, bottom) format, scaled to conform to the to_shape.
+
     """
     gain = min(from_shape[0] / to_shape[0], from_shape[1] / to_shape[1])
     pad = (from_shape[1] - to_shape[1] * gain) / 2, (from_shape[0] - to_shape[0] * gain) / 2

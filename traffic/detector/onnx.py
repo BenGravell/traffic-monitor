@@ -51,12 +51,15 @@ class Primary(nn.Module):
         """Perform YOLO inference on an input image array.
 
         Arguments:
+        ---------
         image: numpy array with shape = (channel, height, width)
 
         Returns:
+        -------
         Prediction outputs. See https://github.com/onnx/models/tree/main/validated/vision/object_detection_segmentation/yolov3#output-of-model for details.
 
         Output box coordinates are in (left, top, right, bottom) format, and are scaled to be compatible with the original image size.
+
         """
         original_image_size_arr = np.array(original_image_size, dtype=np.float32).reshape(1, 2)
         return self.session.run(

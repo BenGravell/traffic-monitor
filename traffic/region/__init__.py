@@ -72,7 +72,7 @@ class RegionGroup:
 
     @property
     def centroid_idxs_contained(self) -> list[int]:
-        return sorted(set(idx for region in self for idx in region.centroid_idxs_contained))
+        return sorted({idx for region in self for idx in region.centroid_idxs_contained})
 
     def update_with_centroids(self, centroids: XyCentroids) -> None:
         for region in self:

@@ -70,8 +70,11 @@ class Tracker(ABC):
         """Update the tracker with detection boxes.
 
         Arguments:
+        ---------
         arg_boxes: Detection boxes.
 
         Returns:
+        -------
         dict from arg box index to track ID.
+
         """

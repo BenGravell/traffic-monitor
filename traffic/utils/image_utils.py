@@ -35,8 +35,8 @@ def letterbox(
     Takes inspiration from letterbox utilities in:
     1. https://github.com/onnx/models/tree/main/validated/vision/object_detection_segmentation/yolov3
     2. https://github.com/ultralytics/yolov3
-    """
 
+    """
     # Convert RGB array to PIL Image
     # NOTE: PIL Image size is (width, height, num_channels)
     image = Image.fromarray(image_arr)
@@ -102,7 +102,6 @@ def box_label(
 
     This is an in-place operation on the frame.
     """
-
     # Draw a rectangle for the bounding box.
     p1, p2 = (box[0], box[1]), (box[2], box[3])
     cv2.rectangle(frame, p1, p2, color, thickness=line_width, lineType=cv2.LINE_AA)

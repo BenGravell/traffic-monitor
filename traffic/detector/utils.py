@@ -8,7 +8,7 @@ COCO_NAMES_PATH = ROOT / "models/yolov3/onnx/coco.names"
 with COCO_NAMES_PATH.open() as file:
     COCO_NAMES = file.read().splitlines()
 
-COCO_NAMES_MAP = {i: coco_name for i, coco_name in enumerate(COCO_NAMES)}
+COCO_NAMES_MAP = dict(enumerate(COCO_NAMES))
 COCO_NAMES_INV_MAP = {v: k for k, v in COCO_NAMES_MAP.items()}
 
 

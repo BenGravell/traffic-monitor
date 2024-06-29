@@ -37,7 +37,7 @@ class CentroidTracker(Tracker):
 
         if not has_arg_boxes and has_tracks:
             # All existing tracks have disappeared.
-            unused_rows = {i for i in range(len(track_ids))}
+            unused_rows = set(range(len(track_ids)))
             # There are no *new* boxes because there are no boxes.
             # unused_cols = set()
 
@@ -45,7 +45,7 @@ class CentroidTracker(Tracker):
             # There are no *disappeared* tracks because there are no tracks.
             # unused_rows = set()
             # All box centroids are new.
-            unused_cols = {i for i in range(len(arg_box_centroids))}
+            unused_cols = set(range(len(arg_box_centroids)))
 
         if has_arg_boxes and has_tracks:
             # Compute distance matrix from track centroids to box centroids

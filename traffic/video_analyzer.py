@@ -213,7 +213,6 @@ class VideoAnalyzer:
           - Output video with detections.
           - Detection and track history files.
         """
-
         with VideoCapture(input_video_path) as video_capture:
             # Get frame width, height, and FPS of input video.
             frame_width = round(video_capture.get(cv2.CAP_PROP_FRAME_WIDTH))
