@@ -120,4 +120,4 @@ Run
 python traffic/region/extract_regions.py
 ```
 
-to extract the detection regions from thte video.
+to extract the detection regions from the video.
