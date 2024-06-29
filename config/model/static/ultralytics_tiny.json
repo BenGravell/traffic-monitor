@@ -1,0 +1,8 @@
+{
+    "detector_type": "ULTRALYTICS",
+    "model_input_image_size": [
+        640,
+        640
+    ],
+    "weights_path": "models/yolov3/ultralytics/yolov3-tiny.onnx"
+}

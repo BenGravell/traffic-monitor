@@ -1,0 +1,5 @@
+{
+    "tracker_type": "CENTROID",
+    "max_frames_disappeared_until_deregistered": 5,
+    "max_distance_for_matching": 100
+}

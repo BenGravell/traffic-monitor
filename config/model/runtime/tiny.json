@@ -1,0 +1,14 @@
+{
+    "device_type": "CPU",
+    "min_confidence": 0.30,
+    "min_intersection_over_union": 0.20,
+    "valid_class_names": [
+        "car",
+        "motorbike",
+        "bus",
+        "truck"
+    ],
+    "model_config_type": "ULTRALYTICS_TINY",
+    "log_detections": true,
+    "log_tracks": true
+}

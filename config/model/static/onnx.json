@@ -1,0 +1,8 @@
+{
+    "detector_type": "ONNX",
+    "model_input_image_size": [
+        416,
+        416
+    ],
+    "weights_path": "models/yolov3/onnx/yolov3-10.onnx"
+}
